@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Marks Entry</title>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="csvFile">
+            <button type="submit">Upload File</button>
+             <h2>University Marks Entry</h2>
+            <div class="input-group">
+                <label for="batch">Batch No:</label>
+                <input type="text" id="batch" name="batch" required>
+            </div>
+            <div class="input-group">
+                <label for="regulation">Regulation:</label>
+                <input type="text" id="regulation" name="regulation" required>
+            </div>
+            <div class="input-group">
+                <label for="semester">Semester:</label>
+                <input type="text" id="semester" name="semester" required>
+            </div>
+            <div class="input-group">
+                <label for="section">Section:</label>
+                <input type="text" id="section" name="section" required>
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
